@@ -1,0 +1,48 @@
+.paginate_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2vh;
+  font-size: 30px;
+}
+
+.paginate_btn1,
+.paginate_btn2 {
+  height: 42px;
+  width: 40px;
+  margin: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  transform: scale(1.05);
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.paginate_btn1 > svg,
+.paginate_btn2 > svg {
+  position: static;
+  border: none;
+}
+
+.paginate_btn1:hover {
+  outline: none;
+  transform: scale(1.05);
+  transform: rotate(-30deg);
+  box-shadow: 0 0 25px rgb(224, 224, 19);
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.paginate_btn2:hover {
+  outline: none;
+  transform: scale(1.05);
+  transform: rotate(30deg);
+  box-shadow: 0 0 25px rgb(224, 224, 19);
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.paginate_span1 {
+  color: white;
+}
+.paginate_span2 {
+  color: rgb(224, 224, 19);
+}

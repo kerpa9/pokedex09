@@ -1,0 +1,87 @@
+.pokecard {
+  position: relative;
+  overflow: hidden;
+  background-color: gray;
+  width: 250px;
+  border: 5px solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.5;
+  margin-top: 20px;
+  transform: rotate(10deg);
+  transition: transform 0.5s;
+}
+.pokecard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgb(224, 224, 19);
+  transition: transform 0.5s, box-shadow 0.5s;
+  opacity: 1;
+}
+
+.pokecard_back {
+  background-color: rgb(224, 224, 19);
+  width: 100%;
+  height: 100px;
+  /* opacity: 0.5; */
+}
+
+.pokecard_back:hover {
+  transform: scale(1.05);
+  /* box-shadow: 0 0 15px black; */
+  transition: transform 0.5s, box-shadow 0.5s;
+  opacity: 1;
+}
+
+.pokecard_img {
+  position: absolute;
+  width: 65%;
+  z-index: 10000;
+}
+
+.pokecard_name {
+  padding-top: 50px;
+}
+
+.pokecard_types {
+  margin: 5px 0;
+  display: flex;
+}
+
+.pokecard_hr {
+  width: 90%;
+  margin: 10px 0;
+}
+
+.pokecard_stats {
+  padding-bottom: 10px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 10px;
+}
+
+.pokecard_stats li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slot2::before {
+  content: "/";
+  margin: 0 5px;
+}
+
+.grass {
+  background-color: green;
+}
+
+.fire {
+  background-color: orange;
+}
+
+.water {
+  background-color: dodgerblue;
+}

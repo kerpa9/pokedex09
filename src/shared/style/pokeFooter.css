@@ -1,0 +1,9 @@
+.footer {
+  background-image: url("https://professorlotus.com/Sprites/Gastly.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 100px;
+  margin-top: -50px;
+}

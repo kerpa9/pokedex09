@@ -1,0 +1,49 @@
+.home_header {
+  background-image: url("https://media.giphy.com/media/12r4pHjvAOv48o/giphy.gif");
+  background-repeat: no-repeat;
+  background-position: 100% 10%;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  color: black;
+}
+
+.home_title1 {
+  font-size: 150px;
+  color: yellow;
+}
+.home_title2 {
+  font-size: 150px;
+  color: black;
+}
+
+.home_p {
+  font-size: 50px;
+}
+
+.home_form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.home_input {
+  border-radius: 7px 0 0 7px;
+}
+
+.home_btn {
+  border-radius: 0 7px 7px 0;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+}
+
+.home_btn:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 15px yellow;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
